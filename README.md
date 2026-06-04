@@ -4,7 +4,6 @@
 ---
 
 ### 🔐 CVE Research & Responsible Disclosure
-
 | Advisory | Project | Severity | Status |
 |----------|---------|----------|--------|
 | [CVE-2026-50142](https://www.cve.org/CVERecord?id=CVE-2026-50142) / [GHSA-jvmp-j3cw-84mh](https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh) | libheif — unbounded heap allocation in HEIF sequence parser | High (CVSS 7.5) | ✅ Fixed in 1 hour |
@@ -20,7 +19,7 @@
 - **libarchive** — Security fix merged upstream ([PR #3030](https://github.com/libarchive/libarchive/pull/3030))
 - **libheif** — CVE-2026-50142 discovery & disclosure ([GHSA-jvmp-j3cw-84mh](https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh))
 - **Cacti** — Discovered and disclosed 2 vulnerabilities (IDOR + Path Traversal); fixes merged by maintainers
-- **libxmp** — Found a class of signed-integer-shift UB (incl. core I/O since 2015) via a libFuzzer + AFL++ / UBSan campaign; reviewed against the C standard by a maintainer and fully resolved across two merged PRs ([#992](https://github.com/libxmp/libxmp/pull/992), [#995](https://github.com/libxmp/libxmp/pull/995))
+- **libxmp** — Found a class of signed-integer-shift UB (incl. a core I/O routine present since 2015) via a libFuzzer + AFL++ / UBSan fuzzing campaign; findings were reviewed against the C standard by a maintainer and fully resolved across two merged PRs ([#992](https://github.com/libxmp/libxmp/pull/992), [#995](https://github.com/libxmp/libxmp/pull/995))
 
 ---
 
