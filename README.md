@@ -14,7 +14,7 @@
 | [GHSA-hvq5-gp2g-6rmv](https://github.com/libarchive/libarchive/security/advisories/GHSA-hvq5-gp2g-6rmv) | libarchive — Integer truncation in 7zip `numDigests` accumulator leads to heap OOB read (CWE-190) | Medium | 🔄 Pending triage |
 | [GHSA-3p4v-475w-5wxv](https://github.com/libarchive/libarchive/security/advisories/GHSA-3p4v-475w-5wxv) | libarchive — Missing recursion depth guard in ISO9660 Joliet parser leads to stack overflow DoS (CWE-674) | Medium (CVSS 4.3) | 🔄 Pending triage |
 | Keycloak 26.0.8 | 5 vulnerabilities (2–3 CVEs expected) | Medium–High | 🔄 Active disclosure |
-| Exiv2 v0.28.8 | 15 findings, Critical CVE candidate | Critical | 📋 Documented |
+
 
 ---
 
