@@ -21,7 +21,7 @@
 
 ## 🛠️ Open Source Contributions
 
-- **Google OSS-Fuzz** — Fuzzing harness for Microsoft ONNX Runtime ([PR](#))
+- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PR #8062). Structured seed corpus for fuzz_shape_inference OSS-Fuzz harness, covering recursive subgraph paths (If/Loop). Collaboration with ONNX Steering Committee maintainer.
 - **libheif** — CVE-2026-50142 discovery & disclosure (GHSA-jvmp-j3cw-84mh)
 - **Keycloak** — Discovered and disclosed CVE-2026-9794; fixed in 26.6.3; acknowledged by Red Hat Security Team
 - **mtr** — Discovered arbitrary root file-read via `MTR_OPTIONS=-F` under sudo; vendor patched within 24 hours; CVE pending
