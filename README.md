@@ -21,4 +21,20 @@
 
 ## 🛠️ Open Source Contributions
 
-- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PRs #8062, #8067). Structured seed corpus for the fuzz_shape_inference OSS-Fuzz harness (recursive If/Loop subgraph paths), plus a new **fuzz_compose** harness targeting `compose.merge_models` — both now running in ONNX's live Google OSS-Fuzz integration on Google's ClusterFuzz infrastructure. Collaboration with an ONNX Steering Committee maintainer ([onnx/onnx#
+- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PRs #8062, #8067). Structured seed corpus for the fuzz_shape_inference OSS-Fuzz harness (recursive If/Loop subgraph paths), plus a new **fuzz_compose** harness targeting `compose.merge_models` — both now running in ONNX's live Google OSS-Fuzz integration on Google's ClusterFuzz infrastructure. Collaboration with an ONNX Steering Committee maintainer ([onnx/onnx#4902](https://github.com/onnx/onnx/issues/4902)).
+- **libheif** — CVE-2026-50142 discovery & disclosure (GHSA-jvmp-j3cw-84mh)
+- **Keycloak** — Discovered and disclosed CVE-2026-9794; fixed in 26.6.3; acknowledged by Red Hat Security Team
+- **mtr** — Discovered arbitrary root file-read via `MTR_OPTIONS=-F` under sudo; vendor patched within 24 hours; CVE pending
+- **libarchive** — Audited 126K LOC across 7 archive format parsers; 3 vulnerabilities discovered; integer overflow fix merged (PR #3030)
+- **Cacti** — Discovered and disclosed 2 vulnerabilities (IDOR + Path Traversal); fixes merged
+- **libxmp** — Signed-integer-shift UB campaign via libFuzzer + AFL++ / UBSan; resolved across two merged PRs (#992, #995)
+- **OpenEXR (ASWF)** — Discovered CVE-2026-53532 via custom libFuzzer harness targeting an HTJ2K decoder gap not covered by OSS-Fuzz; patch committed within 1 hour of disclosure (advisory embargoed pending publication); also discovered an assert-abort in OpenJPH ATK parser (GHSA-gqp6-w5jm-hhxf), fixed upstream
+
+---
+
+## 💻 Skills
+
+**Languages:** C/C++ · Python · PHP · Java
+**Fuzzing & Analysis:** libFuzzer · AFL++ · CodeQL · AddressSanitizer · UBSan · GDB · Atheris · OSS-Fuzz
+**Platforms & Tools:** Kali Linux · FastAPI · Docker · Android
+**Protocols:** SAML · OAuth2 / OIDC
