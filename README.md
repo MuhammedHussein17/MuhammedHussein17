@@ -1,5 +1,4 @@
 # 👋 Hi, I'm Muhammed Hussein
-
 **Cybersecurity Researcher · Software Engineer · Edge-AI Developer**
 
 ---
@@ -8,8 +7,8 @@
 
 | Advisory | Project | Vulnerability | Severity | Status |
 |----------|---------|---------------|----------|--------|
-| **CVE-2026-50142** · GHSA-jvmp-j3cw-84mh | **libheif** | Unbounded heap allocation in HEIF sequence parser | High (CVSS 7.5) | ✅ Fixed in 1 hour 
-| **CVE-2026-53532** · GHSA-2f85-52wj-hc3c | **OpenEXR** | Unhandled assert abort in HTJ2K decoder via crafted QCD marker — DoS via vendored OpenJPH (CWE-617) | Moderate (CVSS 6.5) | ✅ Fixed in 3.4.13 |
+| **CVE-2026-50142** · GHSA-jvmp-j3cw-84mh | **libheif** | Unbounded heap allocation in HEIF sequence parser | High (CVSS 7.5) | ✅ Fixed in 1 hour |
+| **CVE-2026-53532** · GHSA-2f85-52wj-hc3c | **OpenEXR** | Unhandled assert abort in HTJ2K decoder via crafted QCD marker — DoS via vendored OpenJPH (CWE-617) | Moderate (CVSS 6.5) | 🔒 Patched upstream; advisory embargoed pending publication |
 | **GHSA-x6m8-gjm4-87c3** | **Cacti** | IDOR in `reports_form_actions()` — missing ownership check allows unauthorized report manipulation | High (CVSS 8.8) | 🔄 Fix merged, CVE pending |
 | **GHSA-44c9-hrq8-9r46** | **Cacti** | Path Traversal via unsanitized `unserialize()` in `package_import.php` — bypasses CVE-2024-25641 | Medium (CVSS 6.6) | 🔄 Fix in progress |
 | **CVE-2026-9794** | **Keycloak** | Unauthenticated client ID enumeration via SAML ECP faultstring oracle (CWE-203) | Medium (CVSS 5.3) | ✅ Fixed in 26.6.3 |
@@ -22,19 +21,20 @@
 
 ## 🛠️ Open Source Contributions
 
-- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PR #8062). Structured seed corpus for fuzz_shape_inference OSS-Fuzz harness, covering recursive subgraph paths (If/Loop). Collaboration with ONNX Steering Committee maintainer.
+- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PRs #8062, #8067). Structured seed corpus for the fuzz_shape_inference OSS-Fuzz harness (recursive If/Loop subgraph paths), plus a new **fuzz_compose** harness targeting `compose.merge_models` — both now running in ONNX's live Google OSS-Fuzz integration on Google's ClusterFuzz infrastructure. Collaboration with an ONNX Steering Committee maintainer.
 - **libheif** — CVE-2026-50142 discovery & disclosure (GHSA-jvmp-j3cw-84mh)
 - **Keycloak** — Discovered and disclosed CVE-2026-9794; fixed in 26.6.3; acknowledged by Red Hat Security Team
 - **mtr** — Discovered arbitrary root file-read via `MTR_OPTIONS=-F` under sudo; vendor patched within 24 hours; CVE pending
 - **libarchive** — Audited 126K LOC across 7 archive format parsers; 3 vulnerabilities discovered; integer overflow fix merged (PR #3030)
 - **Cacti** — Discovered and disclosed 2 vulnerabilities (IDOR + Path Traversal); fixes merged
 - **libxmp** — Signed-integer-shift UB campaign via libFuzzer + AFL++ / UBSan; resolved across two merged PRs (#992, #995)
-- **OpenEXR (ASWF)** — Discovered CVE-2026-53532 via custom libFuzzer harness targeting HTJ2K decoder gap not covered by OSS-Fuzz; patch committed within 1 hour of disclosure; also discovered assert-abort in OpenJPH ATK parser (GHSA-gqp6-w5jm-hhxf), fixed upstream
+- **OpenEXR (ASWF)** — Discovered CVE-2026-53532 via custom libFuzzer harness targeting an HTJ2K decoder gap not covered by OSS-Fuzz; patch committed within 1 hour of disclosure (advisory embargoed pending publication); also discovered an assert-abort in OpenJPH ATK parser (GHSA-gqp6-w5jm-hhxf), fixed upstream
+
 ---
 
 ## 💻 Skills
 
 **Languages:** C/C++ · Python · PHP · Java
-**Fuzzing & Analysis:** libFuzzer · AFL++ · CodeQL · AddressSanitizer · UBSan · GDB
+**Fuzzing & Analysis:** libFuzzer · AFL++ · CodeQL · AddressSanitizer · UBSan · GDB · Atheris · OSS-Fuzz
 **Platforms & Tools:** Kali Linux · FastAPI · Docker · Android
 **Protocols:** SAML · OAuth2 / OIDC
