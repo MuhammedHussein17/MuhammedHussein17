@@ -22,7 +22,7 @@
 
 ## 🛠️ Open Source Contributions
 
-- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PRs #https://github.com/onnx/onnx/pull/8062, #8067). Structured seed corpus for the fuzz_shape_inference OSS-Fuzz harness (recursive If/Loop subgraph paths), plus a new **fuzz_compose** harness targeting `compose.merge_models` — both now running in ONNX's live Google OSS-Fuzz integration on Google's ClusterFuzz infrastructure. Collaboration with an ONNX Steering Committee maintainer ([onnx/onnx#4902](https://github.com/onnx/onnx/issues/4902)).
+- **ONNX (Linux Foundation AI & Data)** — Merged contributor (PRs #https://github.com/onnx/onnx/pull/8062, #https://github.com/onnx/onnx/pull/8067). Structured seed corpus for the fuzz_shape_inference OSS-Fuzz harness (recursive If/Loop subgraph paths), plus a new **fuzz_compose** harness targeting `compose.merge_models` — both now running in ONNX's live Google OSS-Fuzz integration on Google's ClusterFuzz infrastructure. Collaboration with an ONNX Steering Committee maintainer ([onnx/onnx#4902](https://github.com/onnx/onnx/issues/4902)).
 - **LibRaw** — Discovered integer overflow in `crxSetupImageData()` (CRX/CR3 decoder) via manual code audit after 1.3M+ libFuzzer iterations; confirmed heap-buffer-overflow-write with ASan; fixed by maintainer Alex Tutubalin within 9 minutes of disclosure ([commit 3734f99](https://github.com/LibRaw/LibRaw/commit/3734f99558ab23dd6f9f853133ad7ddb9431b36b)); CVE pending
 - **libheif** — CVE-2026-50142 discovery & disclosure (GHSA-jvmp-j3cw-84mh)
 - **Keycloak** — Discovered and disclosed CVE-2026-9794; fixed in 26.6.3; acknowledged by Red Hat Security Team
