@@ -8,7 +8,7 @@
 | Advisory | Project | Vulnerability | Severity | Status |
 |----------|---------|---------------|----------|--------|
 | **CVE-2026-50142** · GHSA-jvmp-j3cw-84mh | **libheif** | Unbounded heap allocation in HEIF sequence parser | High (CVSS 7.5) | ✅ Fixed in 1 hour |
-| **CVE-2026-53532** · GHSA-2f85-52wj-hc3c | **OpenEXR** | Unhandled assert abort in HTJ2K decoder via crafted QCD marker — DoS via vendored OpenJPH (CWE-617) | Moderate (CVSS 6.5) | 🔒 Patched upstream; advisory embargoed pending publication |
+| **CVE-2026-53532** · GHSA-2f85-52wj-hc3c | **OpenEXR** | Unhandled assert abort in HTJ2K decoder via crafted QCD marker — DoS via vendored OpenJPH (CWE-617) | Moderate | ✅ Published; fixed in v3.4.13   |
 | **CVE pending** | **LibRaw** | Integer overflow in `crxSetupImageData()` → heap-buffer-overflow-write in CRX/CR3 decoder (CWE-190 → CWE-122) | High (CVSS 7.5) | 🔒 Fixed by maintainer ([commit 3734f99](https://github.com/LibRaw/LibRaw/commit/3734f99558ab23dd6f9f853133ad7ddb9431b36b)); CVE pending |
 | **GHSA-x6m8-gjm4-87c3** | **Cacti** | IDOR in `reports_form_actions()` — missing ownership check allows unauthorized report manipulation | High (CVSS 8.8) | 🔄 Fix merged, CVE pending |
 | **GHSA-44c9-hrq8-9r46** | **Cacti** | Path Traversal via unsanitized `unserialize()` in `package_import.php` — bypasses CVE-2024-25641 | Medium (CVSS 6.6) | 🔄 Fix in progress |
